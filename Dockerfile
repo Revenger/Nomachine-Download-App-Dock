@@ -22,6 +22,6 @@ RUN curl -fSL "http://download.nomachine.com/download/5.1/Linux/${NOMACHINE_PACK
 
 ADD nxserver.sh /
 
-CMD ["nxserver.sh"]
+ENTRYPOINT ["/nxserver.sh"]
 
 EXPOSE 22 4000
