@@ -9,6 +9,8 @@ ENV BUILD_PACKAGES="curl cups mate-desktop-environment-core pulseaudio ssh vim x
 RUN apt-get update && apt-get install -y $BUILD_PACKAGES \
 && rm -rf /var/lib/apt/lists/*
 
+ADD nxserver.sh /
+
 RUN curl -fSL "http://download.nomachine.com/download/5.1/Linux/${NOMACHINE_PACKAGE_NAME}" -o nomachine.deb \
 && echo "${NOMACHINE_MD5} *nomachine.deb" | md5sum -c - \
 && dpkg -i nomachine.deb \
@@ -18,9 +20,8 @@ RUN curl -fSL "http://download.nomachine.com/download/5.1/Linux/${NOMACHINE_PACK
 && chown -R nomachine:nomachine /home/nomachine \
 && echo 'nomachine:nomachine' | chpasswd \
 && rm -f nomachine.deb \
-&& service ssh start
-
-ADD nxserver.sh /
+&& service ssh start \
+&& chmod +x /nxserver.sh
 
 ENTRYPOINT ["/nxserver.sh"]
 
