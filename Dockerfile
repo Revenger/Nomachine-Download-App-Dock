@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER JS Minet
+MAINTAINER Revenger, edited from: JS Minet
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV NOMACHINE_PACKAGE_NAME nomachine_5.1.62_1_amd64.deb
