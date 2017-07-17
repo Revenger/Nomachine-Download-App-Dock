@@ -2,7 +2,7 @@ FROM debian:jessie
 MAINTAINER Revenger, edited from: JS Minet
 
 ENV DEBIAN_FRONTEND=noninteractive
-ENV NOMACHINE_PACKAGE_NAME nomachine_5.1.62_1_amd64.deb
+ENV NOMACHINE_PACKAGE_NAME nomachine_5.3.9_6_amd64.deb
 ENV NOMACHINE_MD5 218372fe3591a8d91432aa1c8d6f118a
 ENV BUILD_PACKAGES="curl cups mate-desktop-environment-core pulseaudio ssh vim xterm sudo eiskaltdcpp-gtk3 eiskaltdcpp-emoticons" 
 
@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y $BUILD_PACKAGES \
 
 ADD nxserver.sh /
 
-RUN curl -fSL "http://download.nomachine.com/download/5.1/Linux/${NOMACHINE_PACKAGE_NAME}" -o nomachine.deb \
+RUN curl -fSL "http://download.nomachine.com/download/5.3/Linux/${NOMACHINE_PACKAGE_NAME}" -o nomachine.deb \
 && echo "${NOMACHINE_MD5} *nomachine.deb" | md5sum -c - \
 && dpkg -i nomachine.deb \
 && groupadd -r nomachine -g 433 \
