@@ -3,7 +3,7 @@ MAINTAINER Revenger, edited from: JS Minet
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV NOMACHINE_PACKAGE_NAME nomachine_5.3.9_6_amd64.deb
-ENV NOMACHINE_MD5 218372fe3591a8d91432aa1c8d6f118a
+ENV NOMACHINE_MD5 050eadd9f037e31981c7e138bfcfbe80
 ENV BUILD_PACKAGES="curl cups mate-desktop-environment-core pulseaudio ssh vim xterm sudo eiskaltdcpp-gtk3 eiskaltdcpp-emoticons" 
 
 # Extra DC++ packages not installed for referance
