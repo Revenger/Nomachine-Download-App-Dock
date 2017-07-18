@@ -44,4 +44,4 @@ Run echo 'root:docker' | chpasswd
 
 ENTRYPOINT ["/nxserver.sh"]
 
-EXPOSE 22 4000
+EXPOSE 22 4000 3000
