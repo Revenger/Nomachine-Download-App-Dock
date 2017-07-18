@@ -22,6 +22,7 @@ ENV BUILD_PACKAGES \
 RUN apt-get update && apt-get install -y $BUILD_PACKAGES \
     && rm -rf /var/lib/apt/lists/*
 
+# Add additional files to the process
 ADD nxserver.sh /
 
 # NoMachine install and user add
