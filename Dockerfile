@@ -39,7 +39,7 @@ RUN curl -fSL "${NOMACHINE_PACKAGE_FULL_PATH}" -o nomachine.deb \
     && chmod +x /nxserver.sh
 
 # Root Password change 'needed to access nomachine settings'
-Run echo 'root:docker' | chpasswd \
+Run echo 'root:docker' | chpasswd
 
 ENTRYPOINT ["/nxserver.sh"]
 
