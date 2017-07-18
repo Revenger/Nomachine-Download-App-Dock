@@ -1,5 +1,5 @@
 FROM debian:jessie
-LABEL maintainer="Revenger: aka drguilkd"
+LABEL maintainer="Revenger: aka drguild"
 
 ENV DEBIAN_FRONTEND=noninteractive
 
