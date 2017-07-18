@@ -12,7 +12,7 @@ ENV NOMACHINE_MD5 \
 # Build package list for install
 ENV BUILD_PACKAGES \
     curl cups pulseaudio ssh vim xterm sudo \
-    mate-desktop-environment-core \
+    mate-desktop-environment-core mate-netspeed \
     eiskaltdcpp-gtk3 eiskaltdcpp-emoticons 
 
 # Extra DC++ packages not installed here for referance
