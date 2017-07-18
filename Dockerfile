@@ -4,7 +4,7 @@ MAINTAINER Revenger: aka drguilkd
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Nomachine file download information
-ENV NOMACHINE_PACKAGE_FUll_PATH \
+ENV NOMACHINE_PACKAGE_FULL_PATH \
     http://download.nomachine.com/download/5.3/Linux/nomachine_5.3.9_6_amd64.deb
 ENV NOMACHINE_MD5 \
     050eadd9f037e31981c7e138bfcfbe80
